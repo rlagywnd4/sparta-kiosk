@@ -20,22 +20,22 @@ public class Main {
 
             // print menu
             for(int i = 0; i < menuItems.size(); i++){
-                System.out.println((i+1)+". "+menuItems.get(i).name+ "\t| W "+menuItems.get(i).price+" | "+menuItems.get(i).descriptrion);
+                System.out.println((i+1)+". "+menuItems.get(i).name+ "\t| W "+menuItems.get(i).price+" | "+menuItems.get(i).description);
             }
             System.out.println("0. 종료\t\t| 종료");
 
             switch (scanner.next()){
                 case "1":
-                    System.out.println("1. "+menuItems.get(0).name+ "\t| W "+menuItems.get(0).price+" | "+menuItems.get(0).descriptrion);
+                    System.out.println("1. "+menuItems.get(0).name+ "\t| W "+menuItems.get(0).price+" | "+menuItems.get(0).description);
                     break;
                 case "2":
-                    System.out.println("2. "+menuItems.get(1).name+ "\t| W "+menuItems.get(1).price+" | "+menuItems.get(1).descriptrion);
+                    System.out.println("2. "+menuItems.get(1).name+ "\t| W "+menuItems.get(1).price+" | "+menuItems.get(1).description);
                     break;
                 case "3":
-                    System.out.println("3. "+menuItems.get(2).name+ "\t| W "+menuItems.get(2).price+" | "+menuItems.get(2).descriptrion);
+                    System.out.println("3. "+menuItems.get(2).name+ "\t| W "+menuItems.get(2).price+" | "+menuItems.get(2).description);
                     break;
                 case "4":
-                    System.out.println("4. "+menuItems.get(3).name+ "\t| W "+menuItems.get(3).price+" | "+menuItems.get(3).descriptrion);
+                    System.out.println("4. "+menuItems.get(3).name+ "\t| W "+menuItems.get(3).price+" | "+menuItems.get(3).description);
                     break;
                 case "0":
                     isRunning = false;
