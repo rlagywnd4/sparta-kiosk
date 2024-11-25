@@ -1,5 +1,6 @@
 package org.example.lv4;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -11,6 +12,7 @@ public class Menu {
 
     public Menu(String category) {
         this.category = category;
+        this.menuItems = new ArrayList<>();
     }
 
     String getCategory() {
