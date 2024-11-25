@@ -13,8 +13,7 @@ public class Kiosk {
     public void start(List<Menu> menu) {
         Scanner scanner = new Scanner(System.in);
 
-        boolean isRunning = true;
-        while (isRunning) {
+        while (true) {
             System.out.println("[ SHAKESHACK MENU ]");
 
             for (int i = 0; i < menu.size(); i++) {
@@ -37,10 +36,9 @@ public class Kiosk {
             }
 
             int menuItem = scanner.nextInt();
-            if (0 < menuItem && menuItem <= menu.get(category - 1).menuItems.size()) {
-                System.out.println("선택한 메뉴: " + menu.get(category - 1).menuItems.get(menuItem - 1).name + "\t| W " + menu.get(category - 1).menuItems.get(menuItem - 1).price + " | " + menu.get(category - 1).menuItems.get(menuItem - 1).description);
-            } else if (menuItem == 0) {
-            } else {
+            if (0 < menuItem && menuItem <= menu.get(category - 1).getMenuItems().size()) {
+                System.out.println("선택한 메뉴: " + menu.get(category - 1).getMenuItems().get(menuItem - 1).getName() + "\t| W " + menu.get(category - 1).getMenuItems().get(menuItem - 1).getPrice() + " | " + menu.get(category - 1).getMenuItems().get(menuItem - 1).getDescription());
+            } else if (menuItem != 0) {
                 System.out.println("잘못된 입력입니다.");
             }
             System.out.println();
